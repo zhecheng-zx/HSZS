@@ -93,15 +93,7 @@ button.btn:focus {
     flex: none;
     width: 200px;
     min-height: 100%;
-    background: #0091e0;
-    background: -webkit-linear-gradient(#0090df, #04ddff);
-    /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(#0090df, #04ddff);
-    /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(#0090df, #04ddff);
-    /* Firefox 3.6 - 15 */
-    background: linear-gradient(#0090df, #04ddff);
-    /* 标准的语法 */
+    background: #52a2ff;
 }
 
 .left-bar .left-bar-menu {
@@ -114,6 +106,7 @@ button.btn:focus {
     height: 44px;
     line-height: 44px;
     padding-left: 54px;
+    font-size: 14px;
 }
 
 .left-bar .left-bar-menu li i {
@@ -125,30 +118,33 @@ button.btn:focus {
 
 .left-bar .left-bar-menu>li>a {
     padding-left: 28px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .left-bar-menu ol li a.active {
-    background-color: #35b8ff;
+    background-color: #7cb6fb;
 }
 
 .left-bar-menu ol li a:hover {
-    background-color: #35b8ff;
+    background-color: #7cb6fb;
 }
 
 header {
     padding: 0 28px;
-    background-color: #0b1222;
-    height: 80px;
+    background: -webkit-linear-gradient(top, #52a2ff,#1377ee); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top,#52a2ff,#1377ee); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top, #52a2ff,#1377ee); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to top,#52a2ff,#1377ee); /* 标准的语法（必须放在最后） */
+    height: 60px;
     min-width: 1200px;
 }
 
 header .logo {
-    height: 80px;
+    height: 60px;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    padding-top: 22px;
+    padding-top: 15px;
 }
 
 header .logo a {
@@ -158,8 +154,8 @@ header .logo a {
 header .user {
     float: right;
     display: inline-block;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     font-size: 16px;
     
 
@@ -184,21 +180,23 @@ header i {
 
 .top-bar li {
     display: inline-block;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 .top-bar li a {
     display: inline-block;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     padding: 0 5px;
-    font-size: 18px;
+    font-size: 16px;
     color: #ffffff;
+    width: 100px;
+    text-align: center;
 }
 
 .top-bar li a.active {
-    color: #5584ff;
-    border-bottom: 2px solid #5584ff;
+    color: #fff;
+    background-color: #7cb6fb;
 }
 
 .top-bar li .i1 {
@@ -292,7 +290,7 @@ footer {
 }
 
 .type-list span.active {
-    color: #00a5ff;
+    color: #1377ee;
 }
 
 .type-list span:first-child {
@@ -376,7 +374,7 @@ footer {
 }
 
 .list-box li:nth-of-type(even) {
-    background-color: #f7faff;
+    background-color: #f4f4f4;
 }
 
 .article-title {
@@ -478,7 +476,7 @@ footer {
     height: 40px;
     padding: 0 10px;
     line-height: 40px;
-    background-color: #f7faff;
+    background-color: #f4f4f4;
     font-size: 16px;
     color: #1a1a1a;
     overflow: hidden;
@@ -727,7 +725,7 @@ button.btn-zs-o,a.btn-zs-o{
 }
 
 .park-l-menu li:nth-child(even) {
-    background-color: #f7faff;
+    background-color: #f4f4f4;
 }
 
 .park-l-menu li .park-picture {
@@ -781,14 +779,14 @@ button.btn-zs-o,a.btn-zs-o{
     color: #ffffff;
     display: block;
     height: 40px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 40px;
     padding-left: 28px;
 }
 
 .left-nav li a.active,
 .left-nav>li>a:hover {
-    background-color: #35b8ff;
+    background-color: #7cb6fb;
 }
 
 .left-nav li a img {
@@ -802,11 +800,11 @@ button.btn-zs-o,a.btn-zs-o{
 }
 
 .left-nav ol li a.active {
-    background-color: #35b8ff;
+    background-color: #7cb6fb;
 }
 
 .left-nav ol li a:hover {
-    background-color: #35b8ff;
+    background-color: #7cb6fb;
 }
 .table-box{
         margin:0 -24px 0 -24px ;
@@ -821,7 +819,7 @@ button.btn-zs-o,a.btn-zs-o{
 
 
 .table-zs th {
-    background-color: #def3ff;
+    background-color: #f6f6f6;
     color: #666666;
     font-size: 16px;
     font-weight: normal;
@@ -843,7 +841,7 @@ button.btn-zs-o,a.btn-zs-o{
 }
 
 .table-zs tbody tr:nth-child(even) {
-    background-color: #f7faff;
+    background-color: #f4f4f4;
 }
 
 .m-left {
@@ -856,3 +854,8 @@ button.btn-zs-o,a.btn-zs-o{
 }
 
 #focusCompany .el-checkbox__label{display:none;}
+
+.el-pager li.active{
+    border-color: #1377ee;
+    background-color: #1377ee;
+}

@@ -136,7 +136,7 @@ ul {
         cursor: pointer;
         transition: transform 0.5s;
         &.active {
-            background-color: #ff4f4f;
+            background-color: #f8ba00;
             transform: scale(1.1);
         }
     }

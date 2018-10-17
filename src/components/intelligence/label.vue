@@ -2,7 +2,7 @@
     <div>
         <ul class="type-box">
             <li>
-                <div class="head"><img src="../../assets/images/cy.png" alt="">产业</div>
+                <div class="head">产业</div>
                 <p class="type-list">
                     <span v-for="(item,index) in typeOne" :class="{active:index==oneCode}" @click="selectOne(index)">{{item}}</span>
                 </p>
@@ -10,7 +10,7 @@
             </li>
             <li>
                 <div class="head">
-                    <img src="../../assets/images/bq.png" alt="">产业标签
+                    产业标签
                 </div>
                 <p class="type-list">
                     <span v-for="(item,index) in typeTwo[oneCode]" :class="{active:index==twoCode}" @click="selectTwo(index)">{{item}}</span>
@@ -18,7 +18,7 @@
             </li>
             <li v-if="showTime">
                 <div class="head">
-                    <img src="../../assets/images/time.png" alt="">时间
+                   时间
                 </div>
                 <p class="type-list">
                     <span v-for="(item,index) in time" :class="{active:index==timeCode}" @click="selectTime(index)">{{item}}</span>
