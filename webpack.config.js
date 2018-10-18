@@ -62,7 +62,8 @@ module.exports = (options = {}) => ({
         port: 8003,
         proxy: {
             '/apis': {
-                target: 'http://hszstest2.tpaas.youedata.com',
+                // target: 'http://hszstest2.tpaas.youedata.com',
+                target: 'http://localhost:8094',
                 secure: false,
                 changeOrigin: true
 

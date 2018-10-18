@@ -131,10 +131,10 @@ button.btn:focus {
 
 header {
     padding: 0 28px;
-    background: -webkit-linear-gradient(top, #52a2ff,#1377ee); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(top,#52a2ff,#1377ee); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(top, #52a2ff,#1377ee); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to top,#52a2ff,#1377ee); /* 标准的语法（必须放在最后） */
+    background: -webkit-linear-gradient(top, #1377ee,#52a2ff); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(top, #1377ee,#52a2ff); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(top,  #1377ee,#52a2ff); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to top, #1377ee,#52a2ff); /* 标准的语法（必须放在最后） */
     height: 60px;
     min-width: 1200px;
 }
@@ -242,8 +242,8 @@ header i {
 }
 
 footer {
-    height: 80px;
-    line-height: 80px;
+    height: 99px;
+    line-height: 99px;
     text-align: center;
     color: #63676b;
 }
@@ -859,3 +859,8 @@ button.btn-zs-o,a.btn-zs-o{
     border-color: #1377ee;
     background-color: #1377ee;
 }
+
+.el-input--small .el-input__inner{
+    height: 36px;
+}
+.anchorBL{display:none;}

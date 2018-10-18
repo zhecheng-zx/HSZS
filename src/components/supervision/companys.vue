@@ -291,12 +291,12 @@ export default {
 <style lang="less" scoped>
 .type-item {
     border-radius: 2px;
-    height: 24px;
-    color: #959595;
+    height: 36px;
+    color: #999999;
     display: inline-block;
-    border: 1px solid #cdcdcd;
+    border: 1px solid #999999;
     margin-left: 20px;
-    line-height: 24px;
+    line-height: 36px;
 }
 
 .type-box {

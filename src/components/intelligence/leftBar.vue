@@ -18,7 +18,7 @@
                     </li>
                 </ol>
             </li>
-            <li> <router-link to="/intelligence/parkInfo" style="padding-left:20px;"> 
+            <!-- <li> <router-link to="/intelligence/parkInfo" style="padding-left:20px;"> 
                      <i class="icon-left6"></i>园区情报</router-link>
                 <ol>
                     <li>
@@ -28,7 +28,7 @@
                         <router-link to="/intelligence/focusPark" active-class="active"> <i class="icon-left8"></i>关注园区</router-link>
                     </li>
                 </ol>
-            </li>
+            </li> -->
         </ul>
     </div>
 </template>

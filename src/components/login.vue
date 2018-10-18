@@ -1,7 +1,7 @@
 <template>
     <div class="login">
         <div class="logo">
-            <img src="../assets/images/logo.png" height="49" width="171" alt="logo">
+            <!-- <img src="../assets/images/logo.png" height="49" width="171" alt="logo"> -->
         </div>
         <div class="login-box clearfix">
             <el-row>
@@ -26,7 +26,7 @@
             </el-row>
         </div>
         <div class="footer">
-            Copyright©2007-2016 中科点击（北京）科技有限公司-版权所有 京ICP备11012241-3号
+            <!-- Copyright©2007-2016 中科点击（北京）科技有限公司-版权所有 京ICP备11012241-3号 -->
         </div>
     </div>
 </template>

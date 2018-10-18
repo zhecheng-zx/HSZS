@@ -5,7 +5,7 @@
                 <img src="../../assets/images/peopleCenter.png" height="24" width="18" alt="">个人中心
             </div>
             <div class="userCenter">
-                <img :src="link" height="100" width="100" alt="头像">
+                <!-- <img :src="link" height="100" width="100" alt="头像"> -->
                 <span>账号：{{user.userAccount}}</span>
                 <span>注册时间：{{user.createTime}}</span>
             </div>

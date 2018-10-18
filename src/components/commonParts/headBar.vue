@@ -22,9 +22,9 @@
            
         </ul>
         <span class="user">
-         <router-link  to="/user" >
+         <!-- <router-link  to="/user" >
                 <i class="icon-user"></i>个人中心
-         </router-link>
+         </router-link> -->
          <a href="javascript:void(0);" @click="loginOut">退出</a>
         </span>
   </header>

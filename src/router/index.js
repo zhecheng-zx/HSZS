@@ -77,24 +77,24 @@ export default [
             { path: 'expertView/expert', name: 'expert', component: expert },
             { path: 'expertView/expertList', name: 'expertList', component: expertList },
             { path: 'businessRank', name: 'businessRank', component: businessRank },
-            {
-                path: 'parkInfo',
-                component: parkInfo,
-                children: [
-                    { path: '', name: 'infos', component: infos },
-                    { path: 'cityPark', name: 'cityPark', component: cityPark },
-                    { path: 'dynamic', name: 'dynamic', component: dynamic },
+            // {
+            //     path: 'parkInfo',
+            //     component: parkInfo,
+            //     children: [
+            //         { path: '', name: 'infos', component: infos },
+            //         { path: 'cityPark', name: 'cityPark', component: cityPark },
+            //         { path: 'dynamic', name: 'dynamic', component: dynamic },
 
-                ]
-            },
-            {
-                path: 'focusPark',
-                component: focusPark,
-                children: [
-                    { path: '', name: 'focus', component: focus },
-                    { path: 'parkDetails', name: 'parkDetails', component: parkDetails }
-                ]
-            },
+            //     ]
+            // },
+            // {
+            //     path: 'focusPark',
+            //     component: focusPark,
+            //     children: [
+            //         { path: '', name: 'focus', component: focus },
+            //         { path: 'parkDetails', name: 'parkDetails', component: parkDetails }
+            //     ]
+            // },
             { path: 'article/:id', name: 'article', component: article, }
         ]
 
@@ -138,33 +138,51 @@ export default [
         component: supervision,
         meta: { requiresAuth: true },
         children: [
-            { path:'',redirect:'parkMap'},
-            { path: 'parkMap', name: 'parkMap', component: parkMap },
+            {path:"",redirect:'parkInfo'},
             {
-                path: 'parkCompanys',
-                component: parkCompanys,
+                path: 'parkInfo',
+                component: parkInfo,
                 children: [
-                    { path: '', name: 'companys', component: companys },
-                    {
-                        path: 'companyDetail',
-                        component: companyDetail,
-                        children: [
-                            { path: '', name: 'companyBasic', component: companyBasic },
-                            { path: 'companyBusiness', name: 'companyBusiness', component: companyBusiness },
-                            { path: 'companyInformation', name: 'companyInformation', component: companyInformation },
-                            { path: 'companyFloor', name: 'companyFloor', component: companyFloor },
-                            { path: 'companyRelation', name: 'companyRelation', component: companyRelation },
-                        ]
-                    },
+                    { path: '/', name: 'infos', component: infos },
+                    { path: 'cityPark', name: 'cityPark', component: cityPark },
+                    { path: 'dynamic', name: 'dynamic', component: dynamic }
                 ]
-            },
-            { path: 'goodNews', name: 'goodNews', component: goodNews },
-            { path: 'badNews', name: 'badNews', component: badNews },
-            { path: 'outflow', name: 'outflow', component: outflow },
-            { path: 'articleList/:id', name: 'articleList', component: articleList },
-            {path: 'infoWarning',redirect: "infoWarning/infoChange"},
-            { path: 'infoWarning/infoChange', name: 'infoChange', component: infoChange },
-            { path: 'infoWarning/warningDetails/:id', name: 'warningDetails', component: warningDetails },
+                },
+                {
+                    path: 'focusPark',
+                    component: focusPark,
+                    children: [
+                        { path: '/', name: 'focus', component: focus },
+                        { path: 'parkDetails', name: 'parkDetails', component: parkDetails }
+                    ]
+                },
+            // { path:'',redirect:'parkMap'},
+            // { path: 'parkMap', name: 'parkMap', component: parkMap },
+            // {
+            //     path: 'parkCompanys',
+            //     component: parkCompanys,
+            //     children: [
+            //         { path: '', name: 'companys', component: companys },
+            //         {
+            //             path: 'companyDetail',
+            //             component: companyDetail,
+            //             children: [
+            //                 { path: '', name: 'companyBasic', component: companyBasic },
+            //                 { path: 'companyBusiness', name: 'companyBusiness', component: companyBusiness },
+            //                 { path: 'companyInformation', name: 'companyInformation', component: companyInformation },
+            //                 { path: 'companyFloor', name: 'companyFloor', component: companyFloor },
+            //                 { path: 'companyRelation', name: 'companyRelation', component: companyRelation },
+            //             ]
+            //         },
+            //     ]
+            // },
+            // { path: 'goodNews', name: 'goodNews', component: goodNews },
+            // { path: 'badNews', name: 'badNews', component: badNews },
+            // { path: 'outflow', name: 'outflow', component: outflow },
+            // { path: 'articleList/:id', name: 'articleList', component: articleList },
+            // {path: 'infoWarning',redirect: "infoWarning/infoChange"},
+            // { path: 'infoWarning/infoChange', name: 'infoChange', component: infoChange },
+            // { path: 'infoWarning/warningDetails/:id', name: 'warningDetails', component: warningDetails },
 
           
 

@@ -4,7 +4,18 @@
 	    <div class="wrapper">
            <div class="left-bar">
 		         <ul class="left-nav">
-		            <li>
+					  <li> <router-link to="/supervision/parkInfo" style="padding-left:20px;"> 
+                     <i class="icon-left6"></i>园区情报</router-link>
+					<ol>
+						<li>
+							<router-link to="/supervision/parkInfo" active-class="active"> <i class="icon-left7"></i>园区概览</router-link>
+						</li>
+						<li>
+							<router-link to="/supervision/focusPark" active-class="active"> <i class="icon-left8"></i>关注园区</router-link>
+						</li>
+					</ol>
+            	</li>
+		            <!-- <li>
 		                <router-link to="/supervision/parkMap" active-class="active" >
 		                <img src="../assets/images/supervision.png" style="margin-right:6px;" alt="">
 		                园区监管</router-link>
@@ -46,7 +57,7 @@
 		                    信息变更预警</router-link>
 		                    </li>
                          </ol>
-		            </li>
+		            </li> -->
 		            
 		       </ul>
 		
@@ -56,7 +67,7 @@
 		     <router-view></router-view>
 		     </div>
               <footer>
-                Copyright©2008-2016 中科点击（北京）科技有限公司-版权所有  京ICP备11012241-3号
+                <!-- Copyright©2008-2016 中科点击（北京）科技有限公司-版权所有  京ICP备11012241-3号 -->
             </footer>
 		    </div> 
 		</div>

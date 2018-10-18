@@ -21,7 +21,7 @@
                         </li>
                     </ul>
                     <div class="text-center loadMore">
-                        <router-link to="/intelligence/parkInfo/dynamic" class="blue ">查看更多</router-link>
+                        <router-link to="/supervision/parkInfo/dynamic" class="blue ">查看更多</router-link>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                         <img :src="item.gardenPicture" alt="" width="145" heigt="115" class="park-picture">
                         <div class="right-content">
                             <div>
-                                <router-link class="article-title" :to="{path:'/intelligence/focusPark/parkDetails',query:{query:item.gardenName,id:item.id,address:item.address}}">
+                                <router-link class="article-title" :to="{path:'/supervision/focusPark/parkDetails',query:{query:item.gardenName,id:item.id,address:item.address}}">
                                     {{item.gardenName}}
                                 </router-link>
                             </div>
@@ -587,7 +587,7 @@ export default {
             park.setOption(option);
             park.on('click', function(params) {
                 if(vm.area.indexOf(params.name)!=-1){
-                vm.$router.push({ path: '/intelligence/parkInfo/cityPark', query: { query: params.name,typeName:typeName} });
+                vm.$router.push({ path: '/supervision/parkInfo/cityPark', query: { query: params.name,typeName:typeName} });
                 }
             });
             park.on('legendselectchanged', function (params) {

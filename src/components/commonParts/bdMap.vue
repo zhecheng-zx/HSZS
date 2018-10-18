@@ -94,7 +94,7 @@ export default {
                  adds.forEach(val=>{
                     if(val.name==p.zc.innerText){
                         console.log(val);
-                        vm.$router.push({path:'/intelligence/focusPark/parkDetails',query:{query:val.name,id:val.id,address:val.address}})
+                        vm.$router.push({path:'/supervision/focusPark/parkDetails',query:{query:val.name,id:val.id,address:val.address}})
                         
                     }
                  })
