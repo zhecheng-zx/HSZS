@@ -1,42 +1,6 @@
 <template>
     <div>
         <label-list @labelInfo='labelInfo' :time-show='false'></label-list>
-        <div class="content-block" style="position:relative;">
-            <div class="title policy-title">
-                <img src="../../assets/images/zj.png" alt="">专家说
-            </div>
-            <div class="swiper-container expert-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide expert-slider" v-for="(item,index) in report">
-                        <div>
-                            <a :href="item.url" target="_blank">
-                            <div class="expert-img">
-                                <img src="../../assets/images/people.png" alt="">
-                                <p class="name">{{item.name}}</p>
-                                <p class="Introduction">{{item.createTime}}</p>
-                                <p class="blue">{{item.label}}</p>
-                            </div>
-                            </a>
-                           <!--  <div class="article-box">
-                                <router-link class="title" :to="{ path:'/intelligence/article/'+item.articleId}">{{item.title}}</router-link>
-                                <p class="content">{{item.summary}}</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="swiper-slide expert-slider">
-                        <div>
-                            <div class="expert-add" @click="loadMore">
-                                <img src="../../assets/images/add.png" alt="">
-                                <h3>更多</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-               
-            </div>
-             <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-        </div>
         <div class="content-block">
             <div class="title policy-title">
                 <img src="../../assets/images/bj.png" alt="">百家论

@@ -1,11 +1,9 @@
 <template>
 
 		<div class="content-block search">
-                <a v-for="(item,index) in companys" :href="'/apis/oauth/getSearchList.json?name='+item.companyName" target="_blank" :class="'a'+(index+1)" >{{item.companyName}}</a>
-
 			<div class="search-btn">
 				<!-- <input type="text" placeholder="请输入公司名称"/> -->
-                 <a href="../apis/oauth/loginOpenEye.json" target="_blank">
+                 <a href="http://link.qichacha.com/open/index.html#/search-company/ea201230d6a31e4088aecbee88b171d7/1c8e68698a15c88580568b5267eaa3e7/9474512928a1591b808fabbb34bfd7c2" target="_blank">
                     <button class="btn" >搜索</button>
                  </a>
 
