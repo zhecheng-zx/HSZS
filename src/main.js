@@ -43,8 +43,8 @@ axios.interceptors.response.use(function(response){
 
      return Promise.reject(error);
    });
-new Vue({
-    router,
-    store,
-    render: h => h(App)
-}).$mount('#app')
+  new Vue({
+      router,
+      store,
+      render: h => h(App)
+  }).$mount('#app')

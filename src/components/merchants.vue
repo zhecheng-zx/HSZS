@@ -7,13 +7,15 @@
                     <li>
                         <router-link to="/merchants/companySearch" active-class="active">
                             <img src="../assets/images/n1.png" height="20" width="17" alt=""> 企业搜索
+                            <a href="../apis/oauth/loginOpenEye.json" target="_blank">
+                            </a>
                         </router-link>
                     </li>
-                    <li>
+                    <!-- <li>
                         <router-link to="/merchants/intelligent/recommendCompanys" active-class="active">
                             <img src="../assets/images/n3.png" height="18" width="18" alt=""> 智能推荐
                         </router-link>
-                    </li>
+                    </li> -->
                     <li>
                         <router-link to="/merchants/wisdomMap" active-class="active">
                             <img src="../assets/images/wisdom.png" height="19" width="18" alt=""> 产业智图
@@ -25,6 +27,7 @@
                         </router-link>
                     </li>
                 </ul>
+                
             </div>
             <div class="home">
                 <div class="main-content">

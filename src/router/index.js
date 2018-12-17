@@ -127,7 +127,7 @@ export default [
           
             {path: 'intelligent',redirect:'intelligent/industryType'},     
             { path: 'intelligent/industryType', name: 'industryType', component: industryType },
-            { path: 'intelligent/recommendCompanys', name: 'recommendCompanys', component: recommendCompanys },
+            // { path: 'intelligent/recommendCompanys', name: 'recommendCompanys', component: recommendCompanys },
             { path: 'wisdomMap', name: 'wisdomMap', component: wisdomMap },
             { path: 'focusCompany', name: 'focusCompany', component: focusCompany }
 
